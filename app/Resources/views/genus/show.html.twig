@@ -10,9 +10,6 @@
 <h3>Dump function:</h3>
 {{ dump() }}
 
-<h3>Loop function:</h3>
-{% for note in notes %}
-<li>{{ note }}</li>
-{% endfor %}
+<a href="{{ path('genus_show_notes', {'genusName' : name}) }}">Json Notes</a>
 
 {% endblock %}
